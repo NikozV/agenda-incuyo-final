@@ -8,6 +8,8 @@
     <title>Agenda - INCuyo</title>
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="src/css/estilos.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 
@@ -45,6 +47,24 @@
 
     <div class="container">
 
+        <h1 class="text-center"> Agenda de contactos </h1>
+        <div class="row">
+            <a href="" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
+        </div>
+        <table class="table table-bordered table-striped" style="margin-top:20px;">
+            <thead>
+                <th>ID</th>
+                <th>NOMBRE</th>
+                <th>CELULAR</th>
+                <th>CORREO</th>
+                <th>DIRECCION</th>
+                <th>ACCIONES</th>
+                <tbody>
+
+                </tbody>
+            </thead>
+        </table>
+        
     </div>
 
 </body>
