@@ -54,24 +54,25 @@
             <div class="col-sm-12">
 
                 <a href="#addNew" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
-            </div>
-            <table class="table table-bordered table-striped" style="margin-top:20px;">
-                <thead>
-                    <th>ID</th>
-                    <th>NOMBRE</th>
-                    <th>CELULAR</th>
-                    <th>CORREO</th>
-                    <th>DIRECCION</th>
-                    <th>ACCIONES</th>
-                <tbody>
 
-                </tbody>
-                </thead>
-            </table>
+                <table class="table table-bordered table-striped" style="margin-top:20px;">
+                    <thead>
+                        <th>ID</th>
+                        <th>NOMBRE</th>
+                        <th>CELULAR</th>
+                        <th>CORREO</th>
+                        <th>DIRECCION</th>
+                        <th>ACCIONES</th>
+                    <tbody>
+
+                    </tbody>
+                    </thead>
+                </table>
+            </div>
         </div>
     </div>
     <!-- Llamo a addModal.php -->
-    <?php include('addModal.php');?>
+    <?php include('addModal.php'); ?>
 
 </body>
 
