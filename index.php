@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <!-- <link rel="stylesheet" href="src/css/estilos.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -22,11 +24,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <!-- <li class="nav-item dropdown">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                 Redes Sociales
                 </a>
@@ -36,11 +38,11 @@
                 <a class="dropdown-item" href="#">Twitter</a>
                 </div>
             </li> -->
-            
+
             </ul>
             <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
@@ -49,23 +51,27 @@
 
         <h1 class="text-center"> Agenda de contactos </h1>
         <div class="row">
-            <a href="" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
-        </div>
-        <table class="table table-bordered table-striped" style="margin-top:20px;">
-            <thead>
-                <th>ID</th>
-                <th>NOMBRE</th>
-                <th>CELULAR</th>
-                <th>CORREO</th>
-                <th>DIRECCION</th>
-                <th>ACCIONES</th>
+            <div class="col-sm-12">
+
+                <a href="#addNew" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
+            </div>
+            <table class="table table-bordered table-striped" style="margin-top:20px;">
+                <thead>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>CELULAR</th>
+                    <th>CORREO</th>
+                    <th>DIRECCION</th>
+                    <th>ACCIONES</th>
                 <tbody>
 
                 </tbody>
-            </thead>
-        </table>
-        
+                </thead>
+            </table>
+        </div>
     </div>
+    <!-- Llamo a addModal.php -->
+    <?php include('addModal.php');?>
 
 </body>
 
@@ -73,4 +79,5 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="src/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
 </html>
