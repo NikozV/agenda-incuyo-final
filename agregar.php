@@ -16,3 +16,4 @@ else {
     $_SESSION['message']= 'Llene el formulario';
 }
 header('location: index.php');
+?>

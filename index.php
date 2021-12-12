@@ -59,8 +59,8 @@
                     session_start();
                     if (isset($_SESSION['message'])) {
                     ?>
-                    <div class="alert alert-dismissible alert-success">
-                        <button type="button" class="close" data-dismiss="alert" style="margin-top: 20px;">
+                    <div class="alert alert-dismissible alert-success" style="margin-top: 20px;">
+                        <button type="button" class="close" data-dismiss="alert">
                             &times;
                         </button>
                         <?php echo $_SESSION['message']; ?>
