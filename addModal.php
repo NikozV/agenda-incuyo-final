@@ -14,7 +14,7 @@
 
             <div class="modal-body">
                 <div class="container-fluid">
-                    <form method="POST" action="agregar.php">
+                    <form method="POST" action="agregar.php" id="MyFormAdd">
                         <div class="row form-group">
                             <div class="col-sm-2">
                                 <label class="control-label">Nombre</label>
@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="fa fa-close"></span> Cancelar </button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="BorrarDatosForm()"><span class="fa fa-close"></span> Cancelar </button>
                             <button type="submit" name="add" class="btn btn-primary"><span class="fa fa-save"></span> Guardar </button>
                         </div>
                     </form>
@@ -58,3 +58,8 @@
     </div>
 
 </div>
+<script>
+    function BorrarDatosForm(){
+        document.getElementById("MyFormAdd").reset();
+    }
+</script>
