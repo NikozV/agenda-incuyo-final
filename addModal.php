@@ -48,7 +48,7 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="fa fa-close"></span> Cancelar </button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="fa fa-close"></span> Cancelar </button>
                             <button type="submit" name="add" class="btn btn-primary"><span class="fa fa-save"></span> Guardar </button>
                         </div>
                     </form>
