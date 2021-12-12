@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="src/css/estilos.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- datatables CSS -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -54,7 +56,8 @@
             <div class="col-sm-12">
 
                 <a href="#addNew" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
-                
+                <br>
+                <br>
                 <?php 
                     session_start();
                     if (isset($_SESSION['message'])) {
@@ -70,7 +73,7 @@
                     } 
                 ?>             
 
-                <table class="table table-bordered table-striped" style="margin-top:20px;">
+                <table class="table table-bordered table-striped" id="myTable" style="margin-top:20px;">
                     <thead>
                         <th>ID</th>
                         <th>NOMBRE</th>
@@ -123,5 +126,12 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="src/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<!-- datatables JS -->
+<script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
 
 </html>
