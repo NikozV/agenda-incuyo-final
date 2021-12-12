@@ -13,7 +13,7 @@ if (isset($_POST['edit'])) {
 
         $sql= "UPDATE personas SET Nombre = '$nombrec', Telefono = '$telefonoc', Correo = '$correoc', Direccion = '$direccionc' WHERE idPersona = '$id'";
         
-        $_SESSION['message']=($db -> exec($sql)) ? 'Contacto Actualizado' : 'ERROR, no se puedo actualizar el contacto';
+        $_SESSION['message']=($db -> exec($sql)) ? 'Contacto Actualizado' : 'ERROR, no se pudo actualizar el contacto';
     } catch (PDOException $e) {
         $_SESSION['message']= $e->getMessage();    
     } 
