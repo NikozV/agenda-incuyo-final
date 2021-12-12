@@ -54,6 +54,21 @@
             <div class="col-sm-12">
 
                 <a href="#addNew" class="btn btn-primary" data-toggle="modal"> <span class="fa fa-plus"></span> Nuevo</a>
+                
+                <?php 
+                    session_start();
+                    if (isset($_SESSION['message'])) {
+                    ?>
+                    <div class="alert alert-dismissible alert-success">
+                        <button type="button" class="close" data-dismiss="alert" style="margin-top: 20px;">
+                            &times;
+                        </button>
+                        <?php echo $_SESSION['message']; ?>
+                    </div>
+                    <?php
+                    unset($_SESSION['message']);
+                    } 
+                ?>             
 
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
@@ -80,10 +95,12 @@
                                 <td><?php echo $row['Telefono']; ?></td>
                                 <td><?php echo $row['Correo']; ?></td>
                                 <td><?php echo $row['Direccion']; ?></td>
-                                <td> <a href="#"> Editar </a>
-                                <a href="#"> Eliminar </a> </td>
-                            </tr>
+                                <td> <a href="#edit_<?php echo $row['idPersona']; ?>" class="btn btn-success btn-sm" data-toggle="modal" > <span class="fa fa-edit"></span> Editar </a>
+                                <a href="#delete_<?php echo $row['idPersona']; ?>" class="btn btn-danger btn-sm" data-toggle="modal" > <span class="fa fa-trash"></span> Eliminar </a> </td>
+                                <?php include('editarEliminarModal.php'); ?>   
+                            </tr> 
                             <?php
+                            
                             }
                         } catch (PDOException $e) {
                             echo 'Error de conexion: '.$e->getMessage();
