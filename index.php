@@ -65,6 +65,32 @@
                         <th>ACCIONES</th>
                     <tbody>
 
+                        <?php
+                        /* Mostrar datos en la tabla */
+                        include_once('conexion.php');
+                        $database= new ConectarDB();
+                        $db = $database->open();
+                        try {
+                            $sql = 'SELECT * FROM personas';
+                            foreach ($db->query($sql) as $row) {
+                            ?>
+                            <tr>
+                                <td><?php echo $row['idPersona']; ?></td>
+                                <td><?php echo $row['Nombre']; ?></td>
+                                <td><?php echo $row['Telefono']; ?></td>
+                                <td><?php echo $row['Correo']; ?></td>
+                                <td><?php echo $row['Direccion']; ?></td>
+                                <td> <a href="#"> Editar </a>
+                                <a href="#"> Eliminar </a> </td>
+                            </tr>
+                            <?php
+                            }
+                        } catch (PDOException $e) {
+                            echo 'Error de conexion: '.$e->getMessage();
+                        }
+                        $database->close();
+                        ?>
+
                     </tbody>
                     </thead>
                 </table>
