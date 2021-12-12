@@ -1,3 +1,12 @@
+<?php 
+    session_start();
+  
+    if(!$_SESSION['id']){
+        header('location:login.php');
+    }
+ 
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -43,10 +52,10 @@
             </li> -->
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -141,7 +150,7 @@
             "decimal": "",
             "emptyTable": "No hay información",
             "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-            "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+            "infoEmpty": "Mostrando 0 a 0 de 0 Entradas",
             "infoFiltered": "(Filtrado de _MAX_ total entradas)",
             "infoPostFix": "",
             "thousands": ",",
