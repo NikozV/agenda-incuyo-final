@@ -22,5 +22,5 @@ if (isset($_POST['edit'])) {
 else {
     $_SESSION['message']= 'Llene el formulario';
 }
-header('location: index.php');
+header('location: dashboard.php');
 ?>

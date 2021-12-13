@@ -10,6 +10,22 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ footer {
+  min-height: 70px;
+  background-color: #191919;
+  
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#191919', endColorStr='#000000');
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  /*position: relative;
+  clear: both;             
+  margin-top: 0px;            ELIMINADO
+  padding-top: 0px;
+  overflow: visible;*/
+  
+  bottom: 0;              /* NUEVO */
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

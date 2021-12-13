@@ -126,13 +126,13 @@ if (isset($_POST['submit'])) {
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="small mb-1" for="inputFirstName">Nombre</label>
-                                                    <input class="form-control py-4" name="nombre" id="inputFirstName" type="text" placeholder="Enter first name" />
+                                                    <input class="form-control py-4" name="nombre" id="inputFirstName" type="text" placeholder="Ingrese su nombre" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="small mb-1" for="inputLastName">Apellido</label>
-                                                    <input class="form-control py-4" name="apellido" id="inputLastName" type="text" placeholder="Enter last name" />
+                                                    <input class="form-control py-4" name="apellido" id="inputLastName" type="text" placeholder="Ingrese su apellido" />
                                                 </div>
                                             </div>
                                         </div>
@@ -144,13 +144,13 @@ if (isset($_POST['submit'])) {
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="small mb-1" for="inputPassword">Password</label>
-                                                    <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Enter password" />
+                                                    <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Ingrese su contraseña" />
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label class="small mb-1" for="inputConfirmPassword">Confirme el Password</label>
-                                                    <input class="form-control py-4" name="repassword" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
+                                                    <input class="form-control py-4" name="repassword" id="inputConfirmPassword" type="password" placeholder="Confirme contraseña" />
                                                 </div>
                                             </div>
                                         </div>
@@ -169,13 +169,11 @@ if (isset($_POST['submit'])) {
         </div>
         <div id="layoutAuthentication_footer">
             <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid">
+                <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="text-muted">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            redes sociales
                         </div>
                     </div>
                 </div>

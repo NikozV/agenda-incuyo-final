@@ -17,6 +17,7 @@
     <link rel="icon" href="">
     <title>Agenda - INCuyo</title>
     <!-- CSS -->
+    <link href="src/css/styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="src/css/estilos.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -36,9 +37,9 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <!-- <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
+                </li> -->
 
                 <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -52,10 +53,13 @@
             </li> -->
 
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form> -->
+            <form class="form-inline my-2 my-lg-0">
+                <h5><span class="badge badge-pill badge-light" style="margin-right: 20px;" ><?php echo ucfirst($_SESSION['nombre']); ?></span></h5>
+                <h5><a href="logout.php?logout=true" class="badge badge-light"><span class="fa fa-door-open"></span></a></h5>
+                <!-- <span href="logout.php?logout=true">   Logout</span> -->
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button> -->
+            </form>
         </div>
     </nav>
 
@@ -127,6 +131,20 @@
             </div>
         </div>
     </div>
+
+    <div id="layoutAuthentication_footer">
+        <footer class="py-4 bg-dark mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-white">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
+                    <div>
+                        redes sociales
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <!-- Llamo a addModal.php -->
     <?php include('addModal.php'); ?>
 

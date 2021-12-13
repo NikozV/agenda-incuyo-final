@@ -77,11 +77,11 @@ if (isset($_POST['submit'])) {
                                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                            <input class="form-control py-4" name="email" id="inputEmailAddress" type="email" placeholder="Enter email address" />
+                                            <input class="form-control py-4" name="email" id="inputEmailAddress" type="email" placeholder="Email" />
                                         </div>
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputPassword">Password</label>
-                                            <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Enter password" />
+                                            <input class="form-control py-4" name="password" id="inputPassword" type="password" placeholder="Contraseña" />
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox">
@@ -110,11 +110,9 @@ if (isset($_POST['submit'])) {
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="text-muted">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
                         <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            redes sociales
                         </div>
                     </div>
                 </div>

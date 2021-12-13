@@ -17,5 +17,5 @@ if (isset($_GET['id'])) {
 else {
     $_SESSION['message']= 'Seleccione un contacto';
 }
-header('location: index.php');
+header('location: dashboard.php');
 ?>

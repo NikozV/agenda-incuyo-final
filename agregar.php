@@ -15,5 +15,5 @@ if (isset($_POST['add'])) {
 else {
     $_SESSION['message']= 'Llene el formulario';
 }
-header('location: index.php');
+header('location: dashboard.php');
 ?>
