@@ -5,6 +5,11 @@ class ConectarDB{
     private $server="mysql: host=localhost; dbname=agenda";
     private $user ="root";
     private $pass ="";
+
+    /* private $server="mysql: host=localhost; dbname=id18112947_agenda";
+    private $user ="id18112947_root";
+    private $pass ="^hcxNw#9kgE/9g!&"; */
+
     /* arreglo */
     private $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC);
     protected $conn;

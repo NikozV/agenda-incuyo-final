@@ -2,6 +2,10 @@
 $dsn = 'mysql:dbname=agenda;host=localhost';
 $user = 'root';
 $password = '';
+
+/* $dsn = 'mysql:dbname=id18112947_agenda;host=localhost';
+$user = 'id18112947_root';
+$password = '^hcxNw#9kgE/9g!&'; */
  
 try
 {

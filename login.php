@@ -1,6 +1,6 @@
 <!-- Compr. si existe el usuario y su password -->
 <?php
-session_start();
+@session_start();
 require_once('config.php');
 
 if (isset($_POST['submit'])) {
@@ -82,8 +82,7 @@ if (isset($_POST['submit'])) {
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <h5> <span class="fas fa-user badge badge-pill badge-light" style="margin-right: 20px;"><?php echo "   ";
-                                                                                                        echo ucfirst($_SESSION['nombre']); ?></span> </h5>
+                <h5> <span class="fas fa-user badge badge-pill badge-light" style="margin-right: 20px;"><?php echo "   "; echo ucfirst($_SESSION['nombre']); ?></span> </h5>
                 <h5><a href="logout.php?logout=true" class="badge badge-light"><span class="fa fa-door-open"></span></a></h5>
                 <!-- <span href="logout.php?logout=true">   Logout</span> -->
                 <!-- <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
@@ -127,7 +126,7 @@ if (isset($_POST['submit'])) {
                                             </div>
                                         </div>
                                         <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="small" href="password.html">¿Ha olvidado tu contraseña?</a>
+                                            <!-- <a class="small" href="password.html">¿Ha olvidado tu contraseña?</a> -->
                                             <button type="submit" name="submit" class="btn btn-primary">Login</button>
                                         </div>
                                     </form>
