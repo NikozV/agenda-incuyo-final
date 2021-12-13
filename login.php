@@ -55,6 +55,42 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body class="bg-primary">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <h4><i class="fas fa-address-book text-white"> Agenda de contactos- INCuyo</i> </h4>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+
+                <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Redes Sociales
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Linkedin</a>
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+                </div>
+            </li> -->
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <h5> <span class="fas fa-user badge badge-pill badge-light" style="margin-right: 20px;"><?php echo "   ";
+                                                                                                        echo ucfirst($_SESSION['nombre']); ?></span> </h5>
+                <h5><a href="logout.php?logout=true" class="badge badge-light"><span class="fa fa-door-open"></span></a></h5>
+                <!-- <span href="logout.php?logout=true">   Logout</span> -->
+                <!-- <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button> -->
+            </form>
+        </div>
+    </nav>
     <div id="layoutAuthentication">
         <div id="layoutAuthentication_content">
             <main>
@@ -77,7 +113,7 @@ if (isset($_POST['submit'])) {
                                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputEmailAddress">Email</label>
-                                            <input class="form-control py-4" name="email" id="inputEmailAddress" type="email" placeholder="Email" />
+                                            <input class="form-control py-4" name="email" id="inputEmailAddress" type="email" placeholder="Enter email" />
                                         </div>
                                         <div class="form-group">
                                             <label class="small mb-1" for="inputPassword">Password</label>
@@ -107,12 +143,12 @@ if (isset($_POST['submit'])) {
             </main>
         </div>
         <div id="layoutAuthentication_footer">
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
+            <footer class="py-4 bg-dark mt-auto">
+                <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
+                        <div class="text-white">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
                         <div>
-                            redes sociales
+
                         </div>
                     </div>
                 </div>

@@ -1,10 +1,10 @@
-<?php 
-    session_start();
-  
-    if(!$_SESSION['id']){
-        header('location:login.php');
-    }
- 
+<?php
+session_start();
+
+if (!$_SESSION['id']) {
+    header('location:login.php');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,11 +26,12 @@
     <!-- <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"> -->
 </head>
 
-<body>
+<body class="bg-primary">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Agenda</a>
+        <h4><i class="fas fa-address-book text-white"> Agenda de contactos- INCuyo</i> </h4>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,7 +55,8 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <h5><span class="badge badge-pill badge-light" style="margin-right: 20px;" ><?php echo ucfirst($_SESSION['nombre']); ?></span></h5>
+                <h5> <span class="fas fa-user badge badge-pill badge-light" style="margin-right: 20px;"><?php echo "   ";
+                                                                                                        echo ucfirst($_SESSION['nombre']); ?></span> </h5>
                 <h5><a href="logout.php?logout=true" class="badge badge-light"><span class="fa fa-door-open"></span></a></h5>
                 <!-- <span href="logout.php?logout=true">   Logout</span> -->
                 <!-- <input class="form-control mr-sm-2" type="search" placeholder="buscar" aria-label="Search">
@@ -63,9 +65,9 @@
         </div>
     </nav>
 
-    <div class="container">
-
-        <h1 class="text-center"> Agenda de contactos </h1>
+    <div class=" bg-light container" style="margin-top: 15px;">
+        <br>
+        <!-- <h1 class="text-center"> Agenda de contactos </h1> -->
         <div class="row">
             <div class="col-sm-12">
 
@@ -86,7 +88,7 @@
                 }
                 ?>
 
-                <table class="table table-bordered table-striped" id="myTable" style="margin-top:20px;">
+                <table class=" table table-bordered table-striped" id="myTable" style="margin-top:20px;">
                     <thead>
                         <th>ID</th>
                         <th>NOMBRE</th>
@@ -130,15 +132,16 @@
                 </table>
             </div>
         </div>
+        <br>
     </div>
-
+    <br>
     <div id="layoutAuthentication_footer">
         <footer class="py-4 bg-dark mt-auto">
             <div class="container-fluid">
                 <div class="d-flex align-items-center justify-content-between small">
                     <div class="text-white">Copyright &copy; Vassallo, Mario Nicolás 2021</div>
                     <div>
-                        redes sociales
+                        
                     </div>
                 </div>
             </div>
